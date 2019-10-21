@@ -1,0 +1,58 @@
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 3rem;
+    padding: 15% 0 5% 0;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    padding: 2% 20% 2% 2%;
+}
+  
+.words {
+    display: inline-block;
+    text-align: center;
+    text-decoration: underline;
+}
+.word-animate span{
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;
+    display: inline-block;
+    animation: rotateWord 10s linear infinite 0s;
+    text-decoration: underline;
+
+}
+.word-animate span:nth-child(2) {
+    animation-delay: 3s;
+}
+.word-animate span:nth-child(3) {
+    animation-delay: 6s; 
+}
+
+@keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+    5% { opacity: 1; -webkit-transform: translateY(-25px);}
+    17% { opacity: 1; -webkit-transform: translateY(-25px); }
+    20% { opacity: 0; -webkit-transform: translateY(30px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+
+.top-button-text {
+    padding: 0.5%;
+    font-size: 2.3rem;
+    font-family: DroidSerifBold;
+    border-radius: 6px;
+    width: 40%;
+    color: rgb(119, 124, 124);
+
+    &:hover {
+        background-color: #ff4f00;
+        color: #ffffff;
+    }
+}
