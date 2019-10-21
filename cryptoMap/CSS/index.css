@@ -189,6 +189,9 @@ header nav a {
   font-weight: 700;
   text-decoration: none;
 }
+header nav .active {
+  border-bottom: 2px solid #ffffff;
+}
 header nav .hov:hover {
   color: white;
   cursor: pointer;
