@@ -178,9 +178,8 @@ header nav {
   margin: 0;
   display: flex;
   align-items: center;
-  margin-left: 16px;
   margin-right: auto;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 header nav a {
   color: #54a2ff;
@@ -190,9 +189,14 @@ header nav a {
   font-weight: 700;
   text-decoration: none;
 }
+header nav .hov:hover {
+  color: white;
+  cursor: pointer;
+  background-color: #4A90E2;
+}
 header .searchCont {
   color: #455869;
-  width: 50%;
+  width: 55%;
   display: flex;
 }
 header .searchCont .inputCont {
@@ -206,21 +210,24 @@ header .searchCont .inputCont input[type=text] {
   font-size: 1.25rem;
   background-color: white;
   background-image: url('../images/searchIcon.png');
-  background-position: 8px 8px;
+  background-position: 10px 10px;
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
   border: none;
   border-radius: 0;
   box-shadow: none;
 }
+header .searchCont .inputCont input[type=text]:focus {
+  background-color: #D5DBE3;
+}
 header .searchCont .inputCont ::placeholder {
-  color: #455869;
+  color: #233a4f;
   opacity: 1;
   font-weight: 700;
 }
-header .searchCont .search {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+header .searchCont .searchBtn {
   color: white;
+  font-size: 1.5rem;
   font-weight: bold;
   border: none;
   border-radius: 0;
@@ -228,8 +235,12 @@ header .searchCont .search {
   height: 44px;
   padding: 8px 32px;
   background-color: #4a90e2;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
-header .login {
+header .searchCont .searchBtn:hover {
+  background-color: #01579b;
+}
+header .loginBtn {
   border: 0;
   margin: 0;
   display: inline-flex;
@@ -239,26 +250,29 @@ header .login {
   background-color: transparent;
   font-size: 1.5rem;
   min-width: 64px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  padding: 6px 8px;
+  padding: 10px 12px;
   color: #ff9400;
   font-weight: 700;
   margin-left: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
-header .signUp {
+header .signUpBtn {
   border: 0;
   margin: 0;
   display: inline-flex;
   align-items: center;
   vertical-align: middle;
   justify-content: center;
-  padding: 6px 16px;
+  padding: 10px 26px;
   font-size: 1.5rem;
   min-width: 64px;
   box-sizing: border-box;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   color: white;
   font-weight: 600;
   white-space: nowrap;
   background-color: #ff9400;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+header .signUpBtn:hover {
+  background-color: #01579b;
 }
