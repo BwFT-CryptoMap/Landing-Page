@@ -237,6 +237,7 @@ header .searchCont .searchBtn {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 header .searchCont .searchBtn:hover {
+  cursor: pointer;
   background-color: #01579b;
 }
 header .loginBtn {
@@ -253,7 +254,9 @@ header .loginBtn {
   color: #ff9400;
   font-weight: 700;
   margin-left: 8px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+header .loginBtn:hover {
+  cursor: pointer;
 }
 header .signUpBtn {
   border: 0;
@@ -272,5 +275,6 @@ header .signUpBtn {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 header .signUpBtn:hover {
+  cursor: pointer;
   background-color: #01579b;
 }
