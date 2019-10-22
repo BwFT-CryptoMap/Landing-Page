@@ -70,6 +70,7 @@ details,
 embed,
 figure,
 figcaption,
+button,
 footer,
 header,
 hgroup,
@@ -134,14 +135,14 @@ html {
 }
 html,
 body {
-  font-family: Avenir, "Adobe Blank", sans-serif;
+font-family: Avenir, "Adobe Blank", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: Avenir, "Adobe Blank", sans-serif;
+font-family: Avenir, "Adobe Blank", sans-serif;
 }
 h2 {
   font-size: 3.2rem;
@@ -154,7 +155,7 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 800px;
+  max-width: 100%;
   width: 100%;
   margin: 0 auto;
 }
@@ -333,4 +334,271 @@ header .loginSignUp .signUpBtn {
 header .loginSignUp .signUpBtn:hover {
   cursor: pointer;
   background-color: #01579b;
+
+header-krish {text-align: center;
+  font-size: 3rem;
+  padding: 15% 0 5% 0;
+}
+header-krish h1 {
+  font-size: 3.5rem;
+  padding: 2% 20% 2% 2%;
+}
+header-krish .top-button-text {
+  padding: 0.5%;
+  font-size: 2.3rem;
+  text-decoration: none;
+  font-family: DroidSerifBold;
+  border-radius: 6px;
+  width: 40%;
+  color: peru;
+  background-color: white;
+}
+.words {
+  display: inline-block;
+  text-align: center;
+  text-decoration: underline;
+  color: yellow;
+}
+.word-animate span {
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  display: inline-block;
+  animation: rotateWord 7s linear infinite 0s;
+  text-decoration: underline;
+}
+.word-animate span:nth-child(2) {
+  animation-delay: 3s;
+}
+.word-animate span:nth-child(3) {
+  animation-delay: 5s;
+}
+@keyframes rotateWord {
+  0% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+  }
+  5% {
+    opacity: 1;
+    -webkit-transform: translateY(-27px);
+  }
+  17% {
+    opacity: 1;
+    -webkit-transform: translateY(-27px);
+  }
+  20% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@font-face {
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Exo Regular'), local('Exo-Regular'), url(https://fonts.gstatic.com/s/exo/v9/4UaOrEtFpBISc36m.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Exo Bold'), local('Exo-Bold'), url(https://fonts.gstatic.com/s/exo/v9/4UaDrEtFpBIayFu29xLm.ttf) format('truetype');
+}
+.first-container {
+  height: 90vh;
+}
+.all-logo {
+  position: relative;
+  width: 40%;
+  display: flex;
+  margin: 0 30%;
+  transition: transform 0.5s ease;
+}
+.all-logo:hover {
+  transform: scale(1.1);
+}
+.second-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10% 2% 7% 2%;
+}
+.second-content .messari-img {
+  display: flex;
+  width: 45%;
+  transition: transform 0.5s ease;
+}
+.second-content .messari-img:hover {
+  transform: scale(1.05);
+}
+.second-content .messari-content {
+  text-align: justify;
+  width: 42%;
+  padding: 1%;
+}
+.second-content h2 {
+  color: #ff4f00;
+  padding: 5%;
+}
+.heading {
+  color: blueviolet;
+  background-color: #e3edf4;
+  padding: 2%;
+  margin-top: 5%;
+}
+.third-content {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #e3edf4;
+}
+.third-content .para {
+  margin: 2%;
+  padding: 2% 0;
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  text-align: justify;
+  border-bottom: 2px dashed brown;
+}
+.third-content .para:hover {
+  background-color: #0ef16d;
+}
+.third-content ul {
+  list-style-type: disc;
+  margin: 2%;
+}
+.last-content {
+  background-color: #a8acec;
+  padding: 1% 0;
+}
+.last-content p {
+  margin: 2%;
+  color: white;
+}
+.about-wrapper {
+  background-color: #e3edf4;
+}
+.about-wrapper h2,
+.about-wrapper h3,
+.about-wrapper p {
+  color: black;
+  margin: 0 2%;
+  padding: 1% 0;
+}
+.about-wrapper p {
+  text-align: justify;
+  padding: 2% 0;
+  width: 90%;
+}
+.about-wrapper img {
+  width: 100%;
+}
+/* animation of top landing page */
+.first-container {
+  background: #6ab0f2;
+  background: -webkit-linear-gradient(to left, #a6a6af, #a8acec);
+  height: 85vh;
+}
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
 }
