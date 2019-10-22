@@ -4,19 +4,42 @@ header {
     height: 85px;
     .flexJcenter();
     background-color: #233a4f;   
+    @media @tablet {
+        height: 200px;
+    }
     .content {
         width: 100%;
         .flexAcenter();
         justify-content: space-between;
         padding-left: 32px;
-        padding-right: 32px;        
+        padding-right: 32px;
+        @media @tablet {
+            flex-direction: column;
+            justify-content: center;
+        }
+        .messariLogo {
+            @media @tablet {
+                display: none;
+            }
+        }
+        .homeLogo {
+            display: none;    
+            @media @tablet {
+                display: flex;
+                img {
+                    width: 188.8px;
+                    height: 20.8px;
+                    margin: 30px 0px;
+                }
+            } 
+        }  
     }
     nav {
         width: 100%;
         margin: 0;
         .flexAcenter();
         justify-content: space-around;
-        margin-right: auto;       
+        margin-right: auto;          
         a {
             color: #54a2ff;
             padding: 5px 6px;
@@ -34,11 +57,16 @@ header {
                 cursor: pointer;
                 background-color: #4A90E2;
             }
-        }
+        }    
     }
     .searchCont {
+        
         width: 55%;
-        display: flex;  
+        display: flex; 
+        //display: none; 
+        @media @tablet {
+            display: none;
+        }
         .inputCont{
             width: 100%;
             input[type=search] {
@@ -79,48 +107,57 @@ header {
             &:hover {
                 cursor: pointer;
                 background-color: @btn-hover;
-              }          
+              }         
         }
     }
-    .loginBtn {
-        .noBorderNoMargin();
-        .flexAJcenter();
-        text-decoration: none;
-        background-color: transparent;
-        font-size: @nav-font-size;
-        min-width: 64px;
-        padding: 10px 12px;
-        color: @messari-yellow;
-        font-weight: @bold;
-        margin-left: 8px;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-        &:active {
-            background-color: rgba(255, 148, 0, 0.25);
+    .loginSignUp {
+        display: flex;
+        @media @tablet {
+            margin: 30px;
         }
-        &:focus {
-            outline: 0;
+        .loginBtn {
+            .noBorderNoMargin();
+            .flexAJcenter();
+            text-decoration: none;
+            background-color: transparent;
+            font-size: @nav-font-size;
+            min-width: 64px;
+            padding: 10px 12px;
+            color: @messari-yellow;
+            font-weight: @bold;
+            margin-left: 8px;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            &:active {
+                background-color: rgba(255, 148, 0, 0.25);
+            }
+            &:focus {
+                outline: 0;
+            }
+            &:hover {
+                cursor: pointer;
+            }   
+            @media @tablet {
+                padding: 10px 26px;
+            }     
         }
-        &:hover {
-            cursor: pointer;
+        .signUpBtn {
+            .noBorderNoMargin();
+            .flexAJcenter();
+            padding: 10px 26px;
+            font-size: @nav-font-size;
+            min-width: 64px;        
+            color: white;
+            font-weight: @bold;
+            white-space: nowrap;
+            background-color: @messari-yellow;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            &:hover {
+                cursor: pointer;
+                background-color: @btn-hover;
+            }
         }
     }
-    .signUpBtn {
-        .noBorderNoMargin();
-        .flexAJcenter();
-        vertical-align: middle;
-        padding: 10px 26px;
-        font-size: @nav-font-size;
-        min-width: 64px;        
-        color: white;
-        font-weight: @bold;
-        white-space: nowrap;
-        background-color: @messari-yellow;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-        &:hover {
-            cursor: pointer;
-            background-color: @btn-hover;
-        }
-    }
+    
 }
 
 

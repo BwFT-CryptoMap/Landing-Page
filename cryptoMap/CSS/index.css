@@ -165,6 +165,11 @@ header {
   justify-content: center;
   background-color: #233a4f;
 }
+@media (max-width: 960px) {
+  header {
+    height: 200px;
+  }
+}
 header .content {
   width: 100%;
   display: flex;
@@ -172,6 +177,30 @@ header .content {
   justify-content: space-between;
   padding-left: 32px;
   padding-right: 32px;
+}
+@media (max-width: 960px) {
+  header .content {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 960px) {
+  header .content .messariLogo {
+    display: none;
+  }
+}
+header .content .homeLogo {
+  display: none;
+}
+@media (max-width: 960px) {
+  header .content .homeLogo {
+    display: flex;
+  }
+  header .content .homeLogo img {
+    width: 188.8px;
+    height: 20.8px;
+    margin: 30px 0px;
+  }
 }
 header nav {
   width: 100%;
@@ -200,6 +229,11 @@ header nav .hov:hover {
 header .searchCont {
   width: 55%;
   display: flex;
+}
+@media (max-width: 960px) {
+  header .searchCont {
+    display: none;
+  }
 }
 header .searchCont .inputCont {
   width: 100%;
@@ -243,7 +277,15 @@ header .searchCont .searchBtn:hover {
   cursor: pointer;
   background-color: #01579b;
 }
-header .loginBtn {
+header .loginSignUp {
+  display: flex;
+}
+@media (max-width: 960px) {
+  header .loginSignUp {
+    margin: 30px;
+  }
+}
+header .loginSignUp .loginBtn {
   border: 0;
   margin: 0;
   display: flex;
@@ -259,22 +301,26 @@ header .loginBtn {
   margin-left: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
-header .loginBtn:active {
+header .loginSignUp .loginBtn:active {
   background-color: rgba(255, 148, 0, 0.25);
 }
-header .loginBtn:focus {
+header .loginSignUp .loginBtn:focus {
   outline: 0;
 }
-header .loginBtn:hover {
+header .loginSignUp .loginBtn:hover {
   cursor: pointer;
 }
-header .signUpBtn {
+@media (max-width: 960px) {
+  header .loginSignUp .loginBtn {
+    padding: 10px 26px;
+  }
+}
+header .loginSignUp .signUpBtn {
   border: 0;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  vertical-align: middle;
   padding: 10px 26px;
   font-size: 1.5rem;
   min-width: 64px;
@@ -284,7 +330,7 @@ header .signUpBtn {
   background-color: #ff9400;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
-header .signUpBtn:hover {
+header .loginSignUp .signUpBtn:hover {
   cursor: pointer;
   background-color: #01579b;
 }
