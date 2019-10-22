@@ -169,7 +169,15 @@ header-krish {
     padding: 15% 0 5% 0;
     h1 {
     font-size: 3.5rem;
-    padding: 2% 20% 2% 2%;
+    color: white;
+    padding: 12% 20% 2% 1%;
+    @media @tablet {
+        padding: 12% 37% 2% 1%;
+        font-size: 3.0rem;
+        }
+    @media (max-width: 717px) {
+        display: none;
+        }
     }
     .top-button-text {
         padding: 0.5%;
@@ -177,9 +185,19 @@ header-krish {
         text-decoration: none;
         font-family: DroidSerifBold;
         border-radius: 6px;
-        width: 40%;
         color: peru;
         background-color: white;
+        &:hover {
+            background-color: #ff4f00;
+            color: white;
+            cursor: pointer;
+        }
+        @media (max-width: 717px) {
+            margin-top: 20%;
+        }
+        @media (max-width: 400px) {
+            font-size: 1.3rem;
+        }
     }
     
 }
