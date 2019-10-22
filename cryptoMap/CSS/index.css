@@ -175,20 +175,21 @@ header h1 {
   display: inline-block;
   text-align: center;
   text-decoration: underline;
+  color: yellow;
 }
 .word-animate span {
   position: absolute;
   overflow: hidden;
   opacity: 0;
   display: inline-block;
-  animation: rotateWord 10s linear infinite 0s;
+  animation: rotateWord 7s linear infinite 0s;
   text-decoration: underline;
 }
 .word-animate span:nth-child(2) {
   animation-delay: 3s;
 }
 .word-animate span:nth-child(3) {
-  animation-delay: 6s;
+  animation-delay: 5s;
 }
 @keyframes rotateWord {
   0% {
@@ -200,11 +201,11 @@ header h1 {
   }
   5% {
     opacity: 1;
-    -webkit-transform: translateY(-25px);
+    -webkit-transform: translateY(-27px);
   }
   17% {
     opacity: 1;
-    -webkit-transform: translateY(-25px);
+    -webkit-transform: translateY(-27px);
   }
   20% {
     opacity: 0;
@@ -219,15 +220,12 @@ header h1 {
 }
 .top-button-text {
   padding: 0.5%;
+  text-decoration: none;
   font-size: 2.3rem;
   font-family: DroidSerifBold;
   border-radius: 6px;
   width: 40%;
-  color: #777c7c;
-}
-.top-button-text:hover {
-  background-color: #ff4f00;
-  color: #ffffff;
+  color: peru;
 }
 @font-face {
   font-family: 'Exo';
@@ -241,21 +239,77 @@ header h1 {
   font-weight: 700;
   src: local('Exo Bold'), local('Exo-Bold'), url(https://fonts.gstatic.com/s/exo/v9/4UaDrEtFpBIayFu29xLm.ttf) format('truetype');
 }
+.first-container {
+  height: 90vh;
+}
 .all-logo {
   position: relative;
   width: 40%;
   display: flex;
   margin: 0 30%;
+  transition: transform 0.5s ease;
+}
+.all-logo:hover {
+  transform: scale(1.1);
 }
 .second-content {
   display: flex;
-  background-image: url(/cryptoMap/images/heatmap.jpeg);
+  justify-content: space-between;
+  margin: 10% 2% 7% 2%;
+}
+.second-content .messari-img {
+  display: flex;
+  width: 45%;
+}
+.second-content .messari-content {
+  text-align: justify;
+  width: 42%;
+  padding: 1%;
+}
+.second-content h2 {
+  color: #ff4f00;
+  padding: 5%;
+}
+.heading {
+  color: blueviolet;
+  background-color: #e3edf4;
+  padding: 2%;
+  margin-top: 5%;
+}
+.third-content {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #e3edf4;
+}
+.third-content .para {
+  margin: 2%;
+  padding: 2% 0;
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  text-align: justify;
+  border-bottom: 2px dashed brown;
+}
+.third-content .para:hover {
+  background-color: #0ef16d;
+}
+.third-content ul {
+  list-style-type: disc;
+  margin: 2%;
+}
+.last-content {
+  background-color: #a8acec;
+  padding: 1% 0;
+}
+.last-content p {
+  margin: 2%;
+  color: white;
 }
 /* animation of top landing page */
 .first-container {
   background: #6ab0f2;
   background: -webkit-linear-gradient(to left, #a6a6af, #a8acec);
-  height: 100vh;
+  height: 85vh;
 }
 .circles {
   position: absolute;

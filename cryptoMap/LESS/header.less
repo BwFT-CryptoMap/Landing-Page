@@ -15,13 +15,14 @@ header h1 {
     display: inline-block;
     text-align: center;
     text-decoration: underline;
+    color: yellow;
 }
 .word-animate span{
     position: absolute;
     overflow: hidden;
     opacity: 0;
     display: inline-block;
-    animation: rotateWord 10s linear infinite 0s;
+    animation: rotateWord 7s linear infinite 0s;
     text-decoration: underline;
 
 }
@@ -29,14 +30,14 @@ header h1 {
     animation-delay: 3s;
 }
 .word-animate span:nth-child(3) {
-    animation-delay: 6s; 
+    animation-delay: 5s; 
 }
 
 @keyframes rotateWord {
     0% { opacity: 0; }
     2% { opacity: 0; -webkit-transform: translateY(-30px); }
-    5% { opacity: 1; -webkit-transform: translateY(-25px);}
-    17% { opacity: 1; -webkit-transform: translateY(-25px); }
+    5% { opacity: 1; -webkit-transform: translateY(-27px);}
+    17% { opacity: 1; -webkit-transform: translateY(-27px); }
     20% { opacity: 0; -webkit-transform: translateY(30px); }
     80% { opacity: 0; }
     100% { opacity: 0; }
@@ -45,14 +46,10 @@ header h1 {
 
 .top-button-text {
     padding: 0.5%;
+    text-decoration: none;
     font-size: 2.3rem;
     font-family: DroidSerifBold;
     border-radius: 6px;
     width: 40%;
-    color: rgb(119, 124, 124);
-
-    &:hover {
-        background-color: #ff4f00;
-        color: #ffffff;
-    }
+    color: peru;
 }

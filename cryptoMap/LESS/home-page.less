@@ -1,23 +1,86 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
+.first-container {
+  height: 90vh;
+}
+
 .all-logo {
   position: relative;
   width: 40%;
   display: flex;
   margin: 0 30%;
+  transition: transform .5s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .second-content {
   display: flex;
-  background-image: url(/cryptoMap/images/heatmap.jpeg);
+  justify-content: space-between;
+  margin: 10% 2% 7% 2%;
+
+
+  .messari-img {
+    display: flex;
+    width: 45%;
+  }
+
+  .messari-content {
+    text-align: justify;
+    width: 42%;
+    padding: 1%;
+  }
+
+  h2{
+    color: #ff4f00;
+    padding: 5%;
+  }
 
 }
 
+.heading {
+  color: blueviolet;
+  background-color:#e3edf4;
+  padding: 2%;
+  margin-top: 5%; 
+}
+
+.third-content {
+  display: flex;
+  flex-wrap: wrap;
+  background-color:#e3edf4;
+  .para {
+    margin: 2%;
+    padding: 2% 0;
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    text-align: justify;
+    border-bottom: 2px dashed brown;
+    &:hover {
+      background-color: rgb(14, 241, 109);
+    }
+  }
+  ul {
+    list-style-type: disc;
+    margin: 2%; 
+  }
+}
+
+.last-content{
+  background-color: #a8acec;
+  padding: 1% 0;
+  p {
+    margin: 2%;
+    color: white;
+  }
+}
 /* animation of top landing page */
 .first-container{
     background: rgb(106, 176, 242);  
     background: -webkit-linear-gradient(to left, #a6a6af, #a8acec);
-    height: 100vh;    
+    height: 85vh;    
 }
 
 
