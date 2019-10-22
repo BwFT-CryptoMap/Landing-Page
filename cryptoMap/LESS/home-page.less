@@ -18,12 +18,17 @@
 .second-content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 10% 2% 7% 2%;
 
 
   .messari-img {
     display: flex;
     width: 45%;
+    transition: transform .5s ease;
+    &:hover {
+      transform: scale(1.05);
+    }  
   }
 
   .messari-content {
@@ -76,6 +81,24 @@
     color: white;
   }
 }
+
+.about-wrapper {
+  background-color:#e3edf4;
+  h2, h3, p {
+    color: black;
+    margin: 0 2%;
+    padding: 1% 0;
+  }
+  p{
+    text-align: justify;
+    padding: 2% 0;
+    width: 90%;
+  }
+  img {
+    width: 100%;
+  }
+
+}
 /* animation of top landing page */
 .first-container{
     background: rgb(106, 176, 242);  
@@ -91,7 +114,6 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-image: url(/cryptoMap/images/bitcoin_logo.png);
 }
 
 .circles li{
@@ -102,9 +124,7 @@
     height: 20px;
     background: rgba(255, 255, 255, 0.2);
     animation: animate 25s linear infinite;
-    bottom: -150px;
-    background-image: url(/cryptoMap/images/bitcoin_logo.png);
-    
+    bottom: -150px;    
 }
 
 .circles li:nth-child(1){
@@ -112,7 +132,6 @@
     width: 80px;
     height: 80px;
     animation-delay: 0s;
-    background-image: url(/cryptoMap/images/bitcoin_logo.png);
 }
 
 
