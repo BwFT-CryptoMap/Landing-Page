@@ -2,18 +2,66 @@
 
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="CSS/index.css" rel="stylesheet">
-    <title>CryptoMap</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>CryptoMap</title>
+
+  <link href="css/index.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
     <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  </head>
+
+</head>
+
 <body>
+  <header>
+    <div class="content">
+      <div>
+        <a href="https://messari.io/" class="messariLogo">
+          <img src="images\messari-Icon.svg" alt="Messari Logo">
+        </a>
+        <a href="https://messari.io/" class="homeLogo">
+          <img src="images/messari_home_logo.png" alt="Messari Logo">
+        </a>
+      </div>
+      <nav>
+        <a href="#" class="hov active">Home</a>
+        <a href="#" class="hov">CryptoMap</a>
+        <a href="#" class="hov">About</a>
+        <a href="https://twitter.com/messaricrypto" class="tablet"><img src="images/twitterIcon.png"
+            alt="The Twitter Bird Logo"></a>
+        </a>
+      </nav>
+
+      <div class="searchCont">
+        <div class="inputCont">
+          <form>
+            <input type="search" name="search" placeholder="Search the Messari database">
+          </form>
+        </div>
+        <button class="searchBtn">
+          <span>Search</span>
+        </button>
+      </div>
+      <div class="loginSignUp">
+        <button class="loginBtn">
+          <span>Login</span>
+        </button>
+        <button class="signUpBtn">
+          <span>Sign Up</span>
+        </button>
+      </div>
+    </div>
+
+  </header>
+
   <div class="whole-container">
     <div class="first-container">
       <ul class="circles">
@@ -28,7 +76,7 @@
         <li></li>
         <li></li>
       </ul>
-      <header>
+      <header-krish>
         <h1>HeatMap of Cryptocurrencies by 
           <div class="words word-animate">
             <span>Reported Market Cap</span>
