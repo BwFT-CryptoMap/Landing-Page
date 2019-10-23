@@ -168,7 +168,7 @@
     width: 90%;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;gi
+    margin: 0 auto;
     p {
       text-align: justify;
       padding: 2% 0;
@@ -179,10 +179,16 @@
     width: 100%;
   }
   .content-section {
-    margin: 30px auto;
+    margin: 30px auto 0 auto;
     display: flex;
     justify-content: space-between;
     width: 90%;
+    h2 {
+      background-color: rgb(245, 142, 7);
+      width: auto%;
+      border-radius: 10px;
+      padding: 1% 2%;   
+    }
     @media @mobile {
       width: 100%;
       flex-direction: column;
@@ -255,7 +261,14 @@
         margin-left: 0;
       }
     }
-  } 
+  }
+  .disclaimer {
+    p{
+    padding: 2%;
+    font-style: italic;
+    text-align: justify;
+  }
+}
 } /*about-page wrapper */
 
 /* animation of top landing page */
