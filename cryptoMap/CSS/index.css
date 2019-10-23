@@ -564,8 +564,8 @@ header-krish .top-button-text:hover {
 .third-content .para {
   color: #233A4F;
   font-weight: 700;
-  margin: 2%;
-  padding: 2% 0;
+  margin: 0 2% 2%;
+  padding: 0 0 2% ;
   display: flex;
   flex-direction: row;
   width: 45%;
@@ -578,7 +578,7 @@ header-krish .top-button-text:hover {
   }
 }
 .third-content p {
-  padding: 5%;
+  padding: 2%;
 }
 .third-content p:hover {
   background-color: #233a4f;
@@ -602,9 +602,13 @@ header-krish .top-button-text:hover {
   background-color: #e3edf4;
 }
 .about-wrapper h2,
+.about-wrapper h3 {
+  font-weight: 700;
+}
+.about-wrapper h2,
 .about-wrapper h3,
 .about-wrapper p {
-  color: black;
+  color: #233a4f;
   margin: 0 2%;
   padding: 1% 0;
 }
@@ -613,15 +617,64 @@ header-krish .top-button-text:hover {
   padding: 2% 0;
   width: 90%;
 }
-.about-wrapper img {
+.about-wrapper .messari-graph {
   width: 100%;
 }
-.about-wrapper .box {
-  margin: 0 2%;
-  padding: 2% 0;
+.about-wrapper .content-section {
+  margin: 30px auto;
   display: flex;
-  border: 1px solid red;
+  justify-content: space-between;
+  width: 80%;
 }
+@media (max-width: 550px) {
+  .about-wrapper .content-section {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}
+.about-wrapper .content-section .text-content {
+  width: 80%;
+}
+@media (max-width: 550px) {
+  .about-wrapper .content-section .text-content {
+    width: 90%;
+  }
+}
+.about-wrapper .content-section .text-content a {
+  padding: 1%;
+}
+@media (max-width: 550px) {
+  .about-wrapper .content-section .text-content a {
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 2%;
+  }
+}
+@media (max-width: 550px) {
+  .about-wrapper .content-section .img-content {
+    width: 90%;
+    padding-top: 2%;
+  }
+}
+.about-wrapper .content-section .img-content img {
+  border-radius: 10px;
+}
+@media (max-width: 550px) {
+  .about-wrapper .content-section .img-content img {
+    width: 100%;
+  }
+}
+.about-wrapper .inverse-content {
+  padding-bottom: 30px;
+}
+@media (max-width: 550px) {
+  .about-wrapper .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
+/*about-page wrapper */
 /* animation of top landing page */
 .first-container {
   background-color: #e3edf4;
