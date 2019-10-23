@@ -664,7 +664,7 @@ header-krish .top-button-text:hover {
   flex-direction: column;
   margin: 0 auto;
 }
-.about-wrapper .top-content gi p {
+.about-wrapper .top-content p {
   text-align: justify;
   padding: 2% 0;
   width: 90%;
@@ -673,10 +673,16 @@ header-krish .top-button-text:hover {
   width: 100%;
 }
 .about-wrapper .content-section {
-  margin: 30px auto;
+  margin: 30px auto 0 auto;
   display: flex;
   justify-content: space-between;
   width: 90%;
+}
+.about-wrapper .content-section h2 {
+  background-color: #f58e07;
+  width: auto%;
+  border-radius: 10px;
+  padding: 1% 2%;
 }
 @media (max-width: 550px) {
   .about-wrapper .content-section {
@@ -773,6 +779,11 @@ header-krish .top-button-text:hover {
     margin: 0;
     margin-left: 0;
   }
+}
+.about-wrapper .disclaimer p {
+  padding: 2%;
+  font-style: italic;
+  text-align: justify;
 }
 /*about-page wrapper */
 /* animation of top landing page */
