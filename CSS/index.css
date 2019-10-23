@@ -460,6 +460,27 @@ header-krish .top-button-text:hover {
     opacity: 0;
   }
 }
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 960px) {
+  footer {
+    height: 150px;
+  }
+}
+footer .content {
+  margin-top: 2%;
+}
+footer .copyright {
+  width: 25%;
+  margin: 0;
+}
+footer .copyright p {
+  text-align: center;
+}
 @font-face {
   font-family: 'Exo';
   font-style: normal;
@@ -477,6 +498,7 @@ header-krish .top-button-text:hover {
   width: 40%;
   display: flex;
   margin: 8% 30%;
+  margin-top: 2%;
   transition: transform 0.5s ease;
 }
 .all-logo:hover {
@@ -558,6 +580,7 @@ header-krish .top-button-text:hover {
 @media (max-width: 960px) {
   .second-content .messari-content h2 {
     padding: 0;
+    padding-bottom: 2%;
   }
 }
 @media (max-width: 960px) {
@@ -568,7 +591,8 @@ header-krish .top-button-text:hover {
 .heading {
   color: #233A4F;
   background-color: #e3edf4;
-  padding: 2%;
+  padding: 5%;
+  padding-bottom: 2%;
   font-weight: 700;
 }
 @media (max-width: 960px) {

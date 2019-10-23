@@ -232,3 +232,23 @@ header-krish {
     80% { opacity: 0; }
     100% { opacity: 0; }
 }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    @media @tablet {
+        height: 150px;
+    }
+    .content {
+        margin-top: 2%;
+    }
+    .copyright {
+        width: 25%;
+        margin: 0;
+        p {
+            text-align: center;
+        }
+    }
+}
