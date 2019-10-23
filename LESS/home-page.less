@@ -9,9 +9,12 @@
   &:hover {
     transform: scale(1.1);
   }
+  @media @tablet {
+    margin-top: 4%;
+  }
   @media @mobile {
     width: 60%;
-    margin: 8% 20%;
+    margin: 4% 20%;
   }
 }
 
@@ -23,9 +26,8 @@
   @media @tablet {
     display: flex;
     flex-direction: column;
+    margin: 0;
   }
-
-
   .messari-img {
     width: 54%;
     height: auto;
@@ -39,13 +41,14 @@
       overflow: hidden;
       display: flex;
       justify-content: center;
+      display: none;
     }
     @media (max-width: 720px) {
       width: 100%;
       overflow: hidden;
       display: flex;
       justify-content: flex-start;
-
+      display: none;
     }
   }
 
@@ -59,11 +62,22 @@
     @media @tablet {
       width: 100%;
       overflow: hidden;
+      border-radius: 0;
+      padding: 5%;
+      padding-bottom: 0;
     }
     h2{
       color: white;
       font-weight: @bold;
       padding: 5%;
+      @media @tablet {
+        padding: 0;
+      }
+    }
+    p {
+      @media @tablet {
+        padding-bottom: 2%;      
+      }
     }
   }
 }
@@ -74,6 +88,9 @@
   padding: 2%;
   margin-top: 5%; 
   font-weight: @bold;
+  @media @tablet {
+    margin: 0;
+  }
 }
 
 .third-content {
@@ -81,6 +98,7 @@
   flex-wrap: wrap;
   background-color:#e3edf4;
   @media @mobile {
+    width: 100%;
     flex-direction: column;
   }
   .para {
@@ -93,17 +111,29 @@
     width: 45%;
     text-align: justify;
     border-bottom: 2px dashed @messari-yellow;
-    }
     @media @mobile {
-      width: 100%;  
-    }  
-    p {
-      padding: 2%;
-      &:hover {
-        background-color: #233a4f;
-        color: white;
-        border-radius: 6px;
-    }    
+      width: 100%; 
+      margin: 0;
+      padding: 0; 
+    } 
+  }
+  .last {
+    @media @mobile {
+    border: none;
+    }
+  }
+  p {
+    padding: 2%;
+    .transition();
+    &:hover {
+      background-color: #233a4f;
+      color: white;
+      border-radius: 6px;
+    }
+    @media @tablet {
+        padding: 5%;   
+        padding-top: 2%;   
+    }   
   }
   ul {
     list-style-type: disc;
@@ -191,5 +221,15 @@
   .first-container{
       // background-image: linear-gradient(to left, #8e8ecc, #777bbb);
       background-color: #e3edf4;
-      height: 75vh;    
+      height: 75vh;  
+      @media (max-width: 820px) {
+        height: 50vh;  
+      }  
+      @media (max-width: 660px) {
+        height: 45vh;  
+      } 
+      @media @mobile {
+        height: 40vh;  
+      }
+
   }
