@@ -368,16 +368,16 @@ footer .loginSignUp .signUpBtn:hover {
 header-krish {
   text-align: center;
   font-size: 3rem;
-  padding: 15% 0 5% 0;
+  padding: 5% 0 5% 0;
 }
 header-krish h1 {
   font-size: 3.5rem;
   color: #233a4f;
-  padding: 12% 20% 2% 1%;
+  padding: 5% 20% 2% 1%;
 }
 @media (max-width: 960px) {
   header-krish h1 {
-    padding: 12% 37% 2% 1%;
+    padding: 5% 37% 2% 1%;
     font-size: 3rem;
   }
 }
@@ -460,6 +460,27 @@ header-krish .top-button-text:hover {
     opacity: 0;
   }
 }
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 960px) {
+  footer {
+    height: 150px;
+  }
+}
+footer .content {
+  margin-top: 2%;
+}
+footer .copyright {
+  width: 25%;
+  margin: 0;
+}
+footer .copyright p {
+  text-align: center;
+}
 @font-face {
   font-family: 'Exo';
   font-style: normal;
@@ -477,6 +498,7 @@ header-krish .top-button-text:hover {
   width: 40%;
   display: flex;
   margin: 8% 30%;
+  margin-top: 2%;
   transition: transform 0.5s ease;
 }
 .all-logo:hover {
@@ -558,6 +580,7 @@ header-krish .top-button-text:hover {
 @media (max-width: 960px) {
   .second-content .messari-content h2 {
     padding: 0;
+    padding-bottom: 2%;
   }
 }
 @media (max-width: 960px) {
@@ -568,7 +591,8 @@ header-krish .top-button-text:hover {
 .heading {
   color: #233A4F;
   background-color: #e3edf4;
-  padding: 2%;
+  padding: 5%;
+  padding-bottom: 2%;
   font-weight: 700;
 }
 @media (max-width: 960px) {
@@ -679,8 +703,8 @@ header-krish .top-button-text:hover {
   width: 90%;
 }
 .about-wrapper .content-section h2 {
-  background-color: #f58e07;
-  width: auto%;
+  background-color: #ff9400;
+  width: auto;
   border-radius: 10px;
   padding: 1% 2%;
 }
@@ -793,16 +817,16 @@ header-krish .top-button-text:hover {
 }
 @media (max-width: 820px) {
   .first-container {
-    height: 50vh;
+    height: 75vh;
   }
 }
 @media (max-width: 660px) {
   .first-container {
-    height: 45vh;
+    height: 60vh;
   }
 }
 @media (max-width: 550px) {
   .first-container {
-    height: 40vh;
+    height: 55vh;
   }
 }

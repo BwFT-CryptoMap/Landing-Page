@@ -5,6 +5,7 @@
   width: 40%;
   display: flex;
   margin: 8% 30%;
+  margin-top: 2%;
   transition: transform .5s ease;
   &:hover {
     transform: scale(1.1);
@@ -72,6 +73,7 @@
       padding: 5%;
       @media @tablet {
         padding: 0;
+        padding-bottom: 2%;
       }
     }
     p {
@@ -85,7 +87,8 @@
 .heading {
   color: #233A4F;
   background-color:#e3edf4;
-  padding: 2%;
+  padding: 5%;
+  padding-bottom: 2%;
   font-weight: @bold;
   @media @tablet {
     margin: 0;
@@ -184,8 +187,8 @@
     justify-content: space-between;
     width: 90%;
     h2 {
-      background-color: rgb(245, 142, 7);
-      width: auto%;
+      background-color: @messari-yellow;
+      width: auto;
       border-radius: 10px;
       padding: 1% 2%;   
     }
@@ -277,12 +280,12 @@
       background-color: #e3edf4;
       height: 75vh;  
       @media (max-width: 820px) {
-        height: 50vh;  
+        height: 75vh;  
       }  
       @media (max-width: 660px) {
-        height: 45vh;  
+        height: 60vh;  
       } 
       @media @mobile {
-        height: 40vh;  
+        height: 55vh;  
       }
   }

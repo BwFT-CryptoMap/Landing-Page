@@ -163,13 +163,13 @@ header-krish {
     text-align: center;
     font-size: 3rem;
     
-    padding: 15% 0 5% 0;
+    padding: 5% 0 5% 0;
     h1 {
-    font-size: 3.5rem;
+    font-size: 3.5rem;  
     color: #233a4f;
-    padding: 12% 20% 2% 1%;
+    padding: 5% 20% 2% 1%;
     @media @tablet {
-        padding: 12% 37% 2% 1%;
+        padding: 5% 37% 2% 1%;
         font-size: 3.0rem;
         }
     @media (max-width: 717px) {
@@ -231,4 +231,24 @@ header-krish {
     20% { opacity: 0; -webkit-transform: translateY(30px); }
     80% { opacity: 0; }
     100% { opacity: 0; }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    @media @tablet {
+        height: 150px;
+    }
+    .content {
+        margin-top: 2%;
+    }
+    .copyright {
+        width: 25%;
+        margin: 0;
+        p {
+            text-align: center;
+        }
+    }
 }
