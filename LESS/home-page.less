@@ -153,40 +153,54 @@
 // About Page --------------------
 .about-wrapper {
   background-color:#e3edf4;
-  h2, h3 {
-    font-weight: @bold;
-  }
   h2, h3, p {
     color: #233a4f;
     margin: 0 2%;
     padding: 1% 0;
   }
-  p{
-    text-align: justify;
-    padding: 2% 0;
+  h2, h3 {
+    font-weight: @bold;
+    @media @tablet {
+      padding-top: 2%;
+    }
+  }
+  .top-content {
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;gi
+    p {
+      text-align: justify;
+      padding: 2% 0;
+      width: 90%;
+    }
   }
   .messari-graph {
     width: 100%;
   }
-
   .content-section {
     margin: 30px auto;
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
     @media @mobile {
+      width: 100%;
       flex-direction: column;
       flex-wrap: nowrap;
       align-items: center;
     }
     .text-content {
-      width: 80%;
+      width: 60%;
+      margin-left: 10%;
+      @media @tablet {
+        margin: 0;
+        width: 90%;
+      }
       @media @mobile {
         width: 90%;
       }
       a {
-        padding: 1%;
+        padding: 1.5%;
         @media @mobile {
           display: flex;
           justify-content: center;
@@ -196,12 +210,21 @@
       }
     }
     .img-content {
-      @media @mobile {
+      margin-right: 15%;
+      @media @tablet {
+        margin-right: 0;
         width: 90%;
+      }
+      @media @mobile {
+        width: 50%;
         padding-top: 2%;
+        margin: 0;
       }
       img {
         border-radius: 10px;
+        @media @tablet {
+          width: 95%;
+        }
         @media @mobile {
           width: 100%;
         }
@@ -211,7 +234,26 @@
   .inverse-content {
     padding-bottom: 30px;
     @media @mobile {
-      flex-direction: column-reverse;
+      flex-direction: column-reverse;      
+      padding-bottom: 0;
+    }
+    .text-content {
+      margin-left: 0;
+      margin-right: 3%;
+      @media @tablet {
+        margin-right: 0%;
+      }
+    }
+    .img-content {
+      margin-left: 15%;
+      margin-right: 0;
+      @media @tablet {
+        margin-left: 0%;
+      }
+      @media @mobile {
+        margin: 0;
+        margin-left: 0;
+      }
     }
   } 
 } /*about-page wrapper */
@@ -230,5 +272,4 @@
       @media @mobile {
         height: 40vh;  
       }
-
   }
