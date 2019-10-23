@@ -159,7 +159,8 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-header {
+header,
+footer {
   width: 100%;
   height: 85px;
   display: flex;
@@ -167,11 +168,13 @@ header {
   background-color: #233a4f;
 }
 @media (max-width: 960px) {
-  header {
+  header,
+  footer {
     height: 200px;
   }
 }
-header .content {
+header .content,
+footer .content {
   width: 100%;
   display: flex;
   align-items: center;
@@ -180,30 +183,36 @@ header .content {
   padding-right: 32px;
 }
 @media (max-width: 960px) {
-  header .content {
+  header .content,
+  footer .content {
     flex-direction: column;
     justify-content: center;
   }
 }
 @media (max-width: 960px) {
-  header .content .messariLogo {
+  header .content .messariLogo,
+  footer .content .messariLogo {
     display: none;
   }
 }
-header .content .homeLogo {
+header .content .homeLogo,
+footer .content .homeLogo {
   display: none;
 }
 @media (max-width: 960px) {
-  header .content .homeLogo {
+  header .content .homeLogo,
+  footer .content .homeLogo {
     display: flex;
   }
-  header .content .homeLogo img {
+  header .content .homeLogo img,
+  footer .content .homeLogo img {
     width: 188.8px;
     height: 20.8px;
     margin: 30px 0px;
   }
 }
-header nav {
+header nav,
+footer nav {
   width: 100%;
   margin: 0;
   display: flex;
@@ -211,7 +220,8 @@ header nav {
   justify-content: space-around;
   margin-right: auto;
 }
-header nav a {
+header nav a,
+footer nav a {
   color: #54a2ff;
   padding: 5px 6px;
   font-size: 1.5rem;
@@ -219,27 +229,34 @@ header nav a {
   font-weight: 700;
   text-decoration: none;
 }
-header nav .active {
+header nav .active,
+footer nav .active {
   border-bottom: 2px solid #ffffff;
 }
-header nav .hov:hover {
+header nav .hov:hover,
+footer nav .hov:hover {
   color: white;
   cursor: pointer;
   background-color: #4A90E2;
 }
-header .searchCont {
+header .searchCont,
+footer .searchCont {
   width: 55%;
   display: flex;
+  display: none;
 }
 @media (max-width: 960px) {
-  header .searchCont {
+  header .searchCont,
+  footer .searchCont {
     display: none;
   }
 }
-header .searchCont .inputCont {
+header .searchCont .inputCont,
+footer .searchCont .inputCont {
   width: 100%;
 }
-header .searchCont .inputCont input[type=search] {
+header .searchCont .inputCont input[type=search],
+footer .searchCont .inputCont input[type=search] {
   width: 100%;
   height: 44px;
   box-sizing: border-box;
@@ -254,15 +271,18 @@ header .searchCont .inputCont input[type=search] {
   border-radius: 0;
   box-shadow: none;
 }
-header .searchCont .inputCont input[type=search]:focus {
+header .searchCont .inputCont input[type=search]:focus,
+footer .searchCont .inputCont input[type=search]:focus {
   background-color: #D5DBE3;
 }
-header .searchCont .inputCont ::placeholder {
+header .searchCont .inputCont ::placeholder,
+footer .searchCont .inputCont ::placeholder {
   color: #233a4f;
   opacity: 1;
   font-weight: 700;
 }
-header .searchCont .searchBtn {
+header .searchCont .searchBtn,
+footer .searchCont .searchBtn {
   color: white;
   font-size: 1.5rem;
   font-weight: 700;
@@ -274,19 +294,23 @@ header .searchCont .searchBtn {
   background-color: #4a90e2;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
-header .searchCont .searchBtn:hover {
+header .searchCont .searchBtn:hover,
+footer .searchCont .searchBtn:hover {
   cursor: pointer;
   background-color: #01579b;
 }
-header .loginSignUp {
+header .loginSignUp,
+footer .loginSignUp {
   display: flex;
 }
 @media (max-width: 960px) {
-  header .loginSignUp {
+  header .loginSignUp,
+  footer .loginSignUp {
     margin: 30px;
   }
 }
-header .loginSignUp .loginBtn {
+header .loginSignUp .loginBtn,
+footer .loginSignUp .loginBtn {
   border: 0;
   margin: 0;
   display: flex;
@@ -302,21 +326,26 @@ header .loginSignUp .loginBtn {
   margin-left: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
-header .loginSignUp .loginBtn:active {
+header .loginSignUp .loginBtn:active,
+footer .loginSignUp .loginBtn:active {
   background-color: rgba(255, 148, 0, 0.25);
 }
-header .loginSignUp .loginBtn:focus {
+header .loginSignUp .loginBtn:focus,
+footer .loginSignUp .loginBtn:focus {
   outline: 0;
 }
-header .loginSignUp .loginBtn:hover {
+header .loginSignUp .loginBtn:hover,
+footer .loginSignUp .loginBtn:hover {
   cursor: pointer;
 }
 @media (max-width: 960px) {
-  header .loginSignUp .loginBtn {
+  header .loginSignUp .loginBtn,
+  footer .loginSignUp .loginBtn {
     padding: 10px 26px;
   }
 }
-header .loginSignUp .signUpBtn {
+header .loginSignUp .signUpBtn,
+footer .loginSignUp .signUpBtn {
   border: 0;
   margin: 0;
   display: flex;
@@ -331,7 +360,8 @@ header .loginSignUp .signUpBtn {
   background-color: #ff9400;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
-header .loginSignUp .signUpBtn:hover {
+header .loginSignUp .signUpBtn:hover,
+footer .loginSignUp .signUpBtn:hover {
   cursor: pointer;
   background-color: #01579b;
 }
@@ -342,7 +372,7 @@ header-krish {
 }
 header-krish h1 {
   font-size: 3.5rem;
-  color: white;
+  color: #233a4f;
   padding: 12% 20% 2% 1%;
 }
 @media (max-width: 960px) {
@@ -357,16 +387,19 @@ header-krish h1 {
   }
 }
 header-krish .top-button-text {
-  padding: 0.5%;
+  padding: 1%;
   font-size: 2.3rem;
   text-decoration: none;
   font-family: DroidSerifBold;
   border-radius: 6px;
-  color: peru;
-  background-color: white;
+  color: white;
+  background-color: #4a90e2;
+  border: none;
+  box-shadow: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 header-krish .top-button-text:hover {
-  background-color: #ff4f00;
+  background-color: #01579b;
   color: white;
   cursor: pointer;
 }
@@ -383,8 +416,8 @@ header-krish .top-button-text:hover {
 .words {
   display: inline-block;
   text-align: center;
-  text-decoration: underline;
-  color: yellow;
+  text-decoration: none;
+  color: #ff9400;
 }
 .word-animate span {
   position: absolute;
@@ -392,7 +425,7 @@ header-krish .top-button-text:hover {
   opacity: 0;
   display: inline-block;
   animation: rotateWord 7s linear infinite 0s;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .word-animate span:nth-child(2) {
   animation-delay: 3s;
@@ -496,7 +529,9 @@ header-krish .top-button-text:hover {
   text-align: justify;
   width: 45%;
   padding: 1%;
-  background-color: aquamarine;
+  background-color: #233A4F;
+  color: white;
+  border-radius: 6px;
 }
 @media (max-width: 960px) {
   .second-content .messari-content {
@@ -504,15 +539,17 @@ header-krish .top-button-text:hover {
     overflow: hidden;
   }
 }
-.second-content h2 {
-  color: #ff4f00;
+.second-content .messari-content h2 {
+  color: white;
+  font-weight: 700;
   padding: 5%;
 }
 .heading {
-  color: blueviolet;
+  color: #233A4F;
   background-color: #e3edf4;
   padding: 2%;
   margin-top: 5%;
+  font-weight: 700;
 }
 .third-content {
   display: flex;
@@ -525,43 +562,41 @@ header-krish .top-button-text:hover {
   }
 }
 .third-content .para {
+  color: #233A4F;
+  font-weight: 700;
   margin: 2%;
   padding: 2% 0;
   display: flex;
   flex-direction: row;
   width: 45%;
   text-align: justify;
-  border-bottom: 2px dashed brown;
-}
-.third-content .para:hover {
-  background-color: #0ef16d;
+  border-bottom: 2px dashed #ff9400;
 }
 @media (max-width: 550px) {
-  .third-content .para {
+  .third-content {
     width: 100%;
   }
+}
+.third-content p {
+  padding: 5%;
+}
+.third-content p:hover {
+  background-color: #233a4f;
+  color: white;
+  border-radius: 6px;
 }
 .third-content ul {
   list-style-type: disc;
   margin: 2%;
 }
-.last-content {
-  background-color: #a8acec;
-  padding: 1% 0;
-  display: flex;
-  justify-content: space-around;
+.copyright {
+  width: 15%;
+  margin-top: auto;
 }
-.last-content p {
+.copyright p {
   color: white;
-  width: 20%;
-}
-.last-content nav {
-  width: 30%;
-  display: flex;
-  justify-content: space-around;
-}
-.last-content a {
-  font-size: 2rem;
+  font-size: 0.8rem;
+  padding: 2%;
 }
 .about-wrapper {
   background-color: #e3edf4;
@@ -589,6 +624,6 @@ header-krish .top-button-text:hover {
 }
 /* animation of top landing page */
 .first-container {
-  background-image: linear-gradient(to left, #8e8ecc, #777bbb);
+  background-color: #e3edf4;
   height: 75vh;
 }

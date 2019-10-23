@@ -53,26 +53,27 @@
     text-align: justify;
     width: 45%;
     padding: 1%;
-    background-color: aquamarine;
+    background-color: #233A4F;
+    color: white;
+    border-radius: 6px;
     @media @tablet {
       width: 100%;
       overflow: hidden;
     }
-
+    h2{
+      color: white;
+      font-weight: @bold;
+      padding: 5%;
+    }
   }
-
-  h2{
-    color: #ff4f00;
-    padding: 5%;
-  }
-
 }
 
 .heading {
-  color: blueviolet;
+  color: #233A4F;
   background-color:#e3edf4;
   padding: 2%;
   margin-top: 5%; 
+  font-weight: @bold;
 }
 
 .third-content {
@@ -83,19 +84,26 @@
     flex-direction: column;
   }
   .para {
+    color: #233A4F;
+    font-weight: @bold;
     margin: 2%;
     padding: 2% 0;
     display: flex;
     flex-direction: row;
     width: 45%;
     text-align: justify;
-    border-bottom: 2px dashed brown;
-    &:hover {
-      background-color: rgb(14, 241, 109);
+    border-bottom: 2px dashed @messari-yellow;
     }
     @media @mobile {
       width: 100%;  
-    }      
+    }  
+    p {
+      padding: 5%;
+      &:hover {
+        background-color: #233a4f;
+        color: white;
+        border-radius: 6px;
+    }    
   }
   ul {
     list-style-type: disc;
@@ -103,25 +111,17 @@
   }
 }
 
-.last-content{
-  background-color: #a8acec;
-  padding: 1% 0;
-  display: flex;
-  justify-content: space-around;
+.copyright{
+  width: 15%;
+  margin-top: auto;
   p {
     color: white;
-    width: 20%;
-  }
-  nav {
-    width: 30%;
-    display: flex;
-    justify-content: space-around;
-  }
-  a {
-    font-size: 2.0rem;
+    font-size: .8rem;
+    padding: 2%;
   }
 }
 
+// About Page --------------------
 .about-wrapper {
   background-color:#e3edf4;
   h2, h3, p {
@@ -149,6 +149,7 @@
 }
 /* animation of top landing page */
 .first-container{
-    background-image: linear-gradient(to left, #8e8ecc, #777bbb);
+    // background-image: linear-gradient(to left, #8e8ecc, #777bbb);
+    background-color: #e3edf4;
     height: 75vh;    
 }
