@@ -773,7 +773,7 @@ footer .copyright p {
   }
 }
 .about-wrapper .inverse-content {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 @media (max-width: 550px) {
   .about-wrapper .inverse-content {
